@@ -58,7 +58,7 @@ function App() {
   return (
     <div>
       {foodILike.map(dish => (
-  
+        <Food key={dish.id} name={dish.name} picture={dish.image} />
         <Food
           key={dish.id}
           name={dish.name}
